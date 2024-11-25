@@ -52,6 +52,7 @@ export default function App() {
         <Tab.Screen name="Usuarios" component={UsersScreen} />
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Experiencias" component={ExperiencesScreen} />
+        <Stack.Screen name="Search Experiences"> {(props) => <SearchExperiences {...props} experiences={experiences} />} </Stack.Screen>
       </Tab.Navigator>
     </NavigationContainer>
   );
